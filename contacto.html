@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta</title>
+    <link rel="stylesheet" href="css/formestilos.css">
+</head>
+<body>
+    <div class="fondo fondo-2"></div>
+    <header class="nav nav-cristal">
+        <a class="nav-logo" href="index.html">ABC de las Emociones</a>
+        <nav class="nav-links">
+            <a class="activo" href="index.html">Inicio</a>
+            <a href="pag1.html">Descripcion</a>
+            <a href="pag2.html">Actividades</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="pag4.html">Directorios</a>
+            <a href="secciones.html">Secciones</a>
+            <a href="pag8.html">Creadores</a>
+        </nav>
+    </header>
+    <br><br><form class="form-vidrio form-azul" onsubmit="event.preventDefault(); window.location.href = 'contacto.html';">
+        <h2>Deja tu mensaje</h2>
+        <p>Ingresa tus Datos</p>
+        <div class="form-campo">
+            <label for="1">Nombre</label>
+            <input type="text" id="1" name="1" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-campo">
+            <label for="2">Edad</label>
+            <input type="number" id="2" name="2" placeholder="Tu edad" required>
+        </div>
+        <div class="form-campo">
+            <label for="3">Numero de Celular</label>
+            <input type="tel" id="3" name="3" placeholder="Tu número de celular" required>
+        </div>
+        <div class="form-campo">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        <button class="form-boton" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
